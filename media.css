@@ -209,6 +209,10 @@
 
 @media (max-width: 800px) {
 
+  .blogs h1, .products h1{
+    margin-bottom: 20px;
+    }
+
 h2 img{
     width: 20px;
 }
@@ -221,7 +225,7 @@ h2 img{
       }
 
   .container {
-    width: 90%;
+    max-width: 90%;
   }
 
   h2:not(.quick-links h2, .social-links h2) {
@@ -229,9 +233,11 @@ h2 img{
     font-size: 10px !important;
   }
   p,
-  a,
-  li {
+  a {
     font-size: 14px !important;
+  }
+  li {
+    font-size: 13px !important;
   }
 
   h1:not(.hero h1),
@@ -317,6 +323,9 @@ h2 img{
   }
 
   .discover {
+    h3{
+      font-size: 11px;
+    }
     h1 {
       margin-bottom: 20px;
     }
@@ -368,7 +377,7 @@ h2 img{
 
   .mobile-app {
     h1,
-    h2 {
+    h2,p {
       text-align: center;
     }
     .container {
@@ -382,6 +391,9 @@ h2 img{
     }
     .appStoreLinks {
       align-self: center;
+    }
+    li{
+      line-height: 1;
     }
   }
 
@@ -432,6 +444,7 @@ h2 img{
     }
 
     h5 {
+      text-align: center;
       font-size: 11px;
     }
     .row {
@@ -442,6 +455,9 @@ h2 img{
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
+    .Card li{
+      justify-content: center;
+    }
   }
 
   .impact {
@@ -450,7 +466,7 @@ h2{
 justify-content: center;
 }
 
-h1{
+h1,p{
     text-align: center;
 }
     .pros {
@@ -474,14 +490,25 @@ h1{
     .container {
       width: 56%;
     }
+
+    h4,h3, p{
+      text-align: center;
+    }
     .Card {
-      border-radius: 12px;
+      border-radius: 0 0 12px 12px;
       padding: 12px;
     }
   }
   .blogs {
+    padding-bottom: 75px;
+    h3, p {
+text-align: center;
+    }
+    a{
+      justify-content: center;
+    }
     .container {
-      width: 56%;
+      width: 80%;
     }
     padding-top: 30px;
     .Card {
@@ -555,6 +582,13 @@ h1{
 }
 
 @media (max-width: 500px) {
+  .products h3 , .blogs h3{
+    font-size: 16px;
+  }
+.blogs h1,.blogs h2 {
+  text-align: center;
+}
+
 
 
 
@@ -691,6 +725,12 @@ h1{
   .joinnow {
     ul {
       padding-left: 0.75rem;
+    }
+    .Card h4{
+      font-size: 19px;
+    }
+    .Card h4 span, .Card h3{
+      font-size: 11px;
     }
    
   }

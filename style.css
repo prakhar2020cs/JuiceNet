@@ -89,8 +89,46 @@ button {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  transition: 0.3s all;
+  /* transition: 0.3s all; */
 }
+
+/* ------------swiper---------- */
+.swiper {
+  padding: 5px !important;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-wrapper {
+  margin-bottom: 54px;}
+
+
+  .swiper-pagination-bullet{
+    transition: .3s all;
+    border-radius: 0 !important;
+    width: 24px !important;
+  }
+  
+  .swiper-pagination-bullet-active{
+    background-color: var(--primary-green) !important;
+    width: 54px !important;
+  }
+/* ------------swiper---------- */
 
 body {
   font-family: "Aloevera", sans-serif;
@@ -107,6 +145,10 @@ body {
 /* -----------------------header----------------------------- */
 header {
   padding: 10px;
+}
+
+header .container{
+  padding: 0;
 }
 
 .offcanvas {
@@ -248,6 +290,12 @@ header {
   text-align: center;
   
 
+}
+.appStoreLinks a:hover {
+  transform: scale(1.05);
+}
+.appStoreLinks a:hover .icon {
+  transform: scale(1.3);
 }
 
   
@@ -527,6 +575,7 @@ section.aboutUs div.container {
     top: 2px;
     position: absolute;
     right: -15%;
+    transition: .3s all ease;
   }
   #experience-12k:hover{
     scale: 1.1;
@@ -598,6 +647,7 @@ section.aboutUs div.container {
 .aboutUs .featureCards {
   display: flex;
   gap: 20px;
+
 }
 .aboutUs .featureCard:hover {
  scale: 1.1;
@@ -618,6 +668,7 @@ section.aboutUs div.container {
   color: white;
   /* background: linear-gradient(red, blue); */
   background: linear-gradient(180deg, #02120c 0%, #067e52 100%);
+  transition: .3s all ease;
 
   p {
     color: white;
@@ -644,6 +695,7 @@ section.aboutUs div.container {
       width: 41%;
       bottom: -7%;
       right: -1%;
+     transition: .3s all ease;
     }
   }
 }
@@ -676,7 +728,7 @@ section.aboutUs div.container {
     background-color: #f3f4f6;
     transition: 0.3s background-color ease;
     padding: 32px;
-    transition: .2s all;
+  
   }
  .Card:hover{
 scale: 1.01;
@@ -748,9 +800,9 @@ color: white;
     line-height: 1.26;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #D1D5DB;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: var(--primary-dark-blue);
    
   }
@@ -936,6 +988,10 @@ color: var(--primary-dark-blue);
   }
 }
 
+
+
+
+
 /* ----------------impact----------------- */
 .impact {
   .heading {
@@ -1077,10 +1133,10 @@ margin-inline: auto;
     margin-bottom: 18px;
   }
 
-  .Card:hover{
+  /* .Card:hover{
     scale: 1.1;
     transform: rotateY(36deg);
-  }
+  } */
 }
 
 /* -----------------------------mobile-app-------------- */
@@ -1120,6 +1176,7 @@ margin-inline: auto;
 
   .container {
     padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     gap: 80px;
   }
@@ -1201,7 +1258,7 @@ margin-inline: auto;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
-  h5 {
+  p {
     color: var(--secondary-text-brown);
     font-size: 16px;
     font-weight: 400;
@@ -1248,7 +1305,9 @@ margin-inline: auto;
 
 /* ----------------------------Blogs------------ */
 .blogs {
-  padding: 60px 0 130px;
+  padding: 60px 0 118px;
+
+ 
 
   h2,
   h1 {
@@ -1260,6 +1319,7 @@ margin-inline: auto;
   }
   
   p {
+    text-align: left;
     color: var(--secondary-text-brown);
   }
   h2{
